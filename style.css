@@ -1,0 +1,159 @@
+body {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+}
+
+#section1 {}
+
+
+.sp {
+    text-align: left;
+    padding: 150px;
+}
+
+h1 {
+    font-family: monospace;
+    color: #1618a6;
+    font-size: 500%
+    
+}
+
+h4 {
+    font-family: monospace;
+    color: white;
+    font-size: 300%
+}
+
+p {
+    font-family: monospace;
+    padding: 250px;
+    color: #1618a6;
+    font-size: 400%
+}
+
+table {
+    float:center;
+    position:relative;
+}
+
+
+/* navigation bar*/
+
+.menu {
+  z-index: 100;
+  list-style-type: none;
+  padding: 10px;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top:0;
+  background-color: white;
+}
+
+.menu a {
+  float: right;
+  display: block;
+  color: #1618a6;
+  text-align: center;
+  font-family: monospace;
+  font-size: 2em;
+  padding: 14px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+
+.menu a:hover:not(.active) {
+  background-color: #1618a6;
+  color: white;
+}
+
+/* space */
+
+.space {
+    padding: 50px
+}
+
+
+/* animation */
+
+.wrapper {
+  height: 10vh;
+  display: grid;
+  place-items: left;
+}
+
+.typing-demo {
+    font-size: 300%;
+    color: #1618a6;
+    width: 26ch;
+    animation: typing 4s steps(26), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    font-family: monospace;
+    font-size: 4em;
+}
+
+@keyframes typing {
+  from {width: 0}
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+.info {
+    padding: 100px;
+}
+
+.box{
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #1618a6;
+    transition:1s;
+}
+
+.box:hover:not(.active) {
+  background-color: black;
+  color:#ddd;
+  width: 550px;
+  height: 280px;
+  text-align:center;
+  font-size: 125%;
+  
+}
+
+.headings {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2em;
+    padding: 14px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.tables {
+    margin-left:50px;
+    margin-right:100px;
+    width: 100%;
+}
+
+td {
+  height: 300px;
+}
+
