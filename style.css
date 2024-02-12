@@ -274,7 +274,7 @@ body {
 
   .sp {
     text-align: center;
-    padding: 100px; /* Reduced padding */
+    padding: 50px; /* Reduced padding */
   }
 
   h1 {
@@ -315,7 +315,7 @@ body {
   }
 
   .menu a {
-    float: center;
+    float: right;
     display: block;
     color: #1618a6;
     text-align: center;
@@ -333,7 +333,7 @@ body {
   /* typing animation */
   .wrapper {
     display: grid;
-    place-items: center; /* Adjusted alignment */
+    place-items: left; 
   }
 
   .typing-demo {
