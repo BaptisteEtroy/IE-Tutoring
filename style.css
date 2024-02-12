@@ -344,7 +344,7 @@ body {
 
   /* About us section */
   .info {
-    padding: 50px; 
+    display: none; 
   }
 
   .box {
