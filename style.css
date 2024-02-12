@@ -337,8 +337,8 @@ body {
   }
 
   .typing-demo {
-    font-size: 150%; /* Adjusted font size */
-    width: auto; /* Adjusted width */
+    font-size: 175%;
+    width: 26ch; 
     animation: typing 4s steps(26), blink .5s step-end infinite alternate;
   }
 
@@ -349,7 +349,7 @@ body {
 
   .box {
     width: 250px; 
-    height: 200px; 
+    height: 250px; 
     padding: 5px; 
     font-size: 100%; 
   }
@@ -360,28 +360,28 @@ body {
   }
 
   .founders {
-    flex-direction: column; /* Adjust layout */
-    padding: 50px; /* Adjusted padding */
+    flex-direction: column; 
+    padding: 50px; 
   }
 
   .founder-photo {
-    width: 100px; /* Adjusted size */
+    width: 100px;
   }
 
   /* Whatsapp section */
   .whatsapp-section {
-    padding: 15px; /* Adjusted padding */
+    padding: 15px; 
   }
 
   .whatsapp-qr {
-    width: 150px; /* Adjusted size */
-    height: 150px; /* Adjusted size */
+    width: 200px;
+    height: 200px;
   }
 
   .signature {
     position: fixed;
-    bottom: -120px; /* Adjusted position */
-    right: -117px; /* Adjusted position */
+    bottom: -50px; 
+    right: -57px;
   }
 }
 
