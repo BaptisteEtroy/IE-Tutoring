@@ -280,7 +280,9 @@ body {
   h1 {
     font-family: monospace;
     color: #1618a6;
-    font-size: 250%; /* Adjusted font size */
+    font-size: 200%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   h4 {
@@ -333,12 +335,16 @@ body {
   /* typing animation */
   .wrapper {
     display: grid;
-    place-items: left; 
+    place-items: center; 
   }
 
   .typing-demo {
-    font-size: 125%;
-    width: 26ch; 
+    font-size: 200%; /* Adjust font size for mobile */
+    width: auto; /* Adjust width to fit content */
+    margin: 0 auto; /* Center the typing animation horizontally */
+    padding: 10px 0; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+    border-right: 3px solid #1618a6; /* Adjust the caret border style */
     animation: typing 4s steps(26), blink .5s step-end infinite alternate;
   }
 
