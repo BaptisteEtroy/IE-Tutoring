@@ -262,6 +262,7 @@ body {
 
 
 
+
 @media only screen and (max-width: 768px) {
   body {
     text-align: center;
@@ -273,26 +274,26 @@ body {
 
   .sp {
     text-align: left;
-    padding: 75px; /* Further increased padding for central alignment */
+    padding: 50px; /* Reduced padding */
   }
 
   h1 {
     font-family: monospace;
     color: #1618a6;
-    font-size: 300%; /* Further increased font size */
+    font-size: 250%; /* Adjusted font size */
   }
 
   h4 {
     font-family: monospace;
     color: white;
-    font-size: 200%; /* Further increased font size */
+    font-size: 150%; /* Adjusted font size */
   }
 
   p {
     font-family: monospace;
-    padding: 50px; /* Further increased padding */
+    padding: 25px; /* Adjusted padding */
     color: #1618a6;
-    font-size: 250%; /* Further increased font size */
+    font-size: 200%; /* Adjusted font size */
   }
 
   table {
@@ -336,7 +337,7 @@ body {
   }
 
   .typing-demo {
-    font-size: 200%; /* Further increased font size */
+    font-size: 150%; /* Adjusted font size */
     width: auto; /* Adjusted width */
     animation: typing 4s steps(26), blink .5s step-end infinite alternate;
   }
@@ -347,24 +348,24 @@ body {
   }
 
   .box {
-    width: 300px; /* Further increased size */
-    height: 150px; /* Further increased size */
-    padding: 20px; /* Increased padding */
-    font-size: 125%; /* Increased font size */
-    margin: 0 auto 20px; /* Central alignment and spacing between boxes */
-    display: block; /* Ensure boxes are stacked vertically */
+    width: 250px; /* Adjusted size */
+    height: 100px; /* Adjusted size */
+    padding: 5px; /* Adjusted padding */
+    font-size: 100%; /* Adjusted font size */
   }
 
-  /* Adjust founders section for a vertical layout */
+  /* Founders section */
+  .founders-section {
+    padding: 15px; /* Adjusted padding */
+  }
+
   .founders {
-    flex-direction: column; /* Adjust layout to stack vertically */
-    align-items: center; /* Central alignment */
-    padding: 50px 0; /* Adjusted padding, removed horizontal spacing */
-    -webkit-column-gap: 0; /* Remove column gap */
+    flex-direction: column; /* Adjust layout */
+    padding: 50px; /* Adjusted padding */
   }
 
   .founder-photo {
-    width: 150px; /* Further increased size */
+    width: 100px; /* Adjusted size */
   }
 
   /* Whatsapp section */
@@ -373,15 +374,15 @@ body {
   }
 
   .whatsapp-qr {
-    width: 200px; /* Further increased size */
-    height: 200px; /* Further increased size */
+    width: 150px; /* Adjusted size */
+    height: 150px; /* Adjusted size */
   }
 
   .signature {
-    bottom: -100px; /* Adjusted for better visibility */
-    right: -100px; /* Centralized adjustment */
+    position: fixed;
+    bottom: -120px; /* Adjusted position */
+    right: -117px; /* Adjusted position */
   }
 }
-
 
 
