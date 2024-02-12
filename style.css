@@ -273,14 +273,14 @@ body {
   #section1, #section2 {}
 
   .sp {
-    text-align: left;
+    text-align: center;
     padding: 50px; /* Reduced padding */
   }
 
   h1 {
     font-family: monospace;
     color: #1618a6;
-    font-size: 250%; /* Adjusted font size */
+    font-size: 280%; /* Adjusted font size */
   }
 
   h4 {
@@ -315,7 +315,7 @@ body {
   }
 
   .menu a {
-    float: none; /* Adjust for smaller screens */
+    float: right;
     display: block;
     color: #1618a6;
     text-align: center;
@@ -344,19 +344,19 @@ body {
 
   /* About us section */
   .info {
-    padding: 50px; /* Adjusted padding */
+    padding: 50px; 
   }
 
   .box {
-    width: 250px; /* Adjusted size */
-    height: 100px; /* Adjusted size */
-    padding: 5px; /* Adjusted padding */
-    font-size: 100%; /* Adjusted font size */
+    width: 250px; 
+    height: 200px; 
+    padding: 5px; 
+    font-size: 100%; 
   }
 
   /* Founders section */
   .founders-section {
-    padding: 15px; /* Adjusted padding */
+    padding: 15px; 
   }
 
   .founders {
