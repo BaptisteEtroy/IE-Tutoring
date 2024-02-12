@@ -274,7 +274,7 @@ body {
 
   .sp {
     text-align: center;
-    padding: 50px; /* Reduced padding */
+    padding: 150px; /* Reduced padding */
   }
 
   h1 {
@@ -315,7 +315,7 @@ body {
   }
 
   .menu a {
-    float: right;
+    float: center;
     display: block;
     color: #1618a6;
     text-align: center;
