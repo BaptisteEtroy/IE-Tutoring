@@ -339,7 +339,7 @@ body {
   }
 
   .typing-demo {
-    font-size: 200%; /* Adjust font size for mobile */
+    font-size: 150%; /* Adjust font size for mobile */
     width: auto; /* Adjust width to fit content */
     margin: 0 auto; /* Center the typing animation horizontally */
     padding: 10px 0; /* Add padding for spacing */
