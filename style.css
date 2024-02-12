@@ -263,19 +263,125 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+  body {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+  }
+
+  #section1, #section2 {}
+
   .sp {
-    padding: 50px; /* Reduced padding for smaller screens */
+    text-align: left;
+    padding: 50px; /* Reduced padding */
   }
 
   h1 {
-    font-size: 150%; /* Smaller font size for headings */
+    font-family: monospace;
+    color: #1618a6;
+    font-size: 250%; /* Adjusted font size */
+  }
+
+  h4 {
+    font-family: monospace;
+    color: white;
+    font-size: 150%; /* Adjusted font size */
   }
 
   p {
-    padding: 25px; /* Adjust padding */
-    font-size: 100%; /* Adjust font size */
+    font-family: monospace;
+    padding: 25px; /* Adjusted padding */
+    color: #1618a6;
+    font-size: 200%; /* Adjusted font size */
   }
 
-  /* Add more overrides for other elements as needed */
+  table {
+    float: none;
+    position: relative;
+  }
+
+  /* navigation bar */
+  .menu {
+    z-index: 100;
+    list-style-type: none;
+    padding: 10px;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: white;
+  }
+
+  .menu a {
+    float: none; /* Adjust for smaller screens */
+    display: block;
+    color: #1618a6;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.5em; /* Adjusted font size */
+    padding: 14px 20px; /* Adjusted padding */
+    text-decoration: none;
+    border-radius: 50px;
+  }
+
+  .space {
+    padding: 25px; /* Adjusted padding */
+  }
+
+  /* typing animation */
+  .wrapper {
+    display: grid;
+    place-items: center; /* Adjusted alignment */
+  }
+
+  .typing-demo {
+    font-size: 150%; /* Adjusted font size */
+    width: auto; /* Adjusted width */
+    animation: typing 4s steps(26), blink .5s step-end infinite alternate;
+  }
+
+  /* About us section */
+  .info {
+    padding: 50px; /* Adjusted padding */
+  }
+
+  .box {
+    width: 250px; /* Adjusted size */
+    height: 100px; /* Adjusted size */
+    padding: 5px; /* Adjusted padding */
+    font-size: 100%; /* Adjusted font size */
+  }
+
+  /* Founders section */
+  .founders-section {
+    padding: 15px; /* Adjusted padding */
+  }
+
+  .founders {
+    flex-direction: column; /* Adjust layout */
+    padding: 50px; /* Adjusted padding */
+  }
+
+  .founder-photo {
+    width: 100px; /* Adjusted size */
+  }
+
+  /* Whatsapp section */
+  .whatsapp-section {
+    padding: 15px; /* Adjusted padding */
+  }
+
+  .whatsapp-qr {
+    width: 150px; /* Adjusted size */
+    height: 150px; /* Adjusted size */
+  }
+
+  .signature {
+    position: fixed;
+    bottom: -120px; /* Adjusted position */
+    right: -117px; /* Adjusted position */
+  }
 }
+
 
