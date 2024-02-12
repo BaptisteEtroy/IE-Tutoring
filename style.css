@@ -343,8 +343,12 @@ body {
   }
 
   /* About us section */
+  .about-us {
+      display: none;
+  }
+    
   .info {
-    display: none; 
+    padding: 5px;
   }
 
   .box {
