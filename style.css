@@ -267,8 +267,8 @@ td {
 
     p {
         font-size: 150%; /* Adjust the font size */
-        margin-top: 100px;
-        margin-bottom: 100px; /* Add more space below the paragraph */
+        margin-top: 200px;
+        margin-bottom: 200px; /* Add more space below the paragraph */
     }
     
 
@@ -281,6 +281,7 @@ td {
         width: auto; 
         margin: 0 auto;
         animation: typing 4s steps(22), blink .5s step-end infinite alternate; 
+        border-right: 2px solid;
     }
 
     .info {
