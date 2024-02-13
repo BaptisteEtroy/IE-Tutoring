@@ -267,11 +267,12 @@ td {
 
     p {
         font-size: 150%; /* Adjust the font size */
+        margin-top: 100px;
         margin-bottom: 100px; /* Add more space below the paragraph */
     }
     
 
-    .space, .wrapper, .info {
+    .space, .info {
         padding: 10px;
     }
 
