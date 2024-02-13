@@ -5,6 +5,7 @@ body {
 }
 
 #section1 {}
+#section2 {}
 
 
 .sp {
@@ -77,7 +78,7 @@ table {
 }
 
 
-/* animation */
+/* typing animation */
 
 .wrapper {
   height: 10vh;
@@ -107,14 +108,18 @@ table {
   }
 }
 
+/* About us section */
 
 .info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 50px;
     padding: 100px;
+    justify-content: center;
 }
 
-.box{
-    width: 500px;
-    height: 200px;
+.box {
+    height: auto;
     text-align: center;
     padding: 10px;
     color: white;
@@ -122,16 +127,13 @@ table {
     font-weight: bold;
     border-radius: 10px;
     background-color: #1618a6;
-    transition:1s;
+    transition: background-color 0.5s, color 0.5s;;
 }
 
 .box:hover:not(.active) {
   background-color: black;
   color:#ddd;
-  width: 550px;
-  height: 280px;
   text-align:center;
-  font-size: 125%;
   
 }
 
@@ -157,6 +159,8 @@ td {
   height: 300px;
 }
 
+/* Founders section */
+
 .founders-section {
     padding: 30px;
     text-align: center;
@@ -169,7 +173,6 @@ td {
     -webkit-column-gap: 200px;
 }
 
-/* Individual founder */
 .founder {
     display: flex;
     flex-direction: column;
@@ -193,29 +196,31 @@ td {
     font-size: 1em;
 }
 
+/* Whatsapp section*/
+
 .whatsapp-section {
     position: relative;
     padding: 30px;
     text-align: center;
-    margin-top: 20px; /* Space from the previous section; adjust as needed */
+    margin-top: 20px;
 }
 
 .whatsapp-qr {
-    width: 300px; /* Adjust as needed */
-    height: 300px; /* Maintain aspect ratio */
+    width: 300px;
+    height: 300px;
     margin-bottom: 0px;
 }
 
 .whatsapp-section h6 {
     color: #1618a6;
     font-family: monospace;
-    margin-bottom: 10px; /* Adjust as needed */
+    margin-bottom: 10px;
     font-size: 1.2em;
 }
 
 .whatsapp-join-button {
     display: inline-block;
-    background-color: #25D366; /* WhatsApp color */
+    background-color: #25D366;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -226,173 +231,75 @@ td {
 }
 
 .whatsapp-join-button:hover {
-    background-color: #128C7E; /* Slightly darker WhatsApp color */
+    background-color: #128C7E;
 }
 
 .signature {
     position: fixed;
-    bottom: -240px; /* Adjust this value as necessary to match the circled area */
-    right: -230px; /* Adjust this value as necessary to match the circled area */
+    bottom: -240px;
+    right: -235px;
     text-align: right;
     font-family: monospace;
-    color: #1618a6; /* Adjust the color as needed */
-    z-index: 1000; /* Ensure it stays above other content */
+    color: #1618a6;
+    z-index: 1000;
 }
 
 .signature p {
     margin: 0;
-    font-size: 1em; /* Adjust the size as needed */
+    font-size: 1em;
 }
 
 .signature span {
-    font-size: 1em; /* Adjust the size as needed */
+    font-size: 1em;
 }
 
-
-
-/* Base styles that apply to all devices */
-body {
-  text-align: center;
-  margin: 0;
-  background-color: white;
-  /* Other styles */
-}
-
-
-
-
-
+/* Add this at the bottom of your existing CSS */
 
 @media only screen and (max-width: 768px) {
-  body {
-    text-align: center;
-    margin: 0;
-    background-color: white;
-  }
+    /* Hide top navigation buttons */
+    .menu li {
+        display: none;
+    }
 
-  #section1, #section2 {}
+    /* Reduce padding and margins to space things out */
+    .sp, p {
+        padding: 20px;
+    }
 
-  .sp {
-    text-align: left;
-    padding: 50px; /* Reduced padding */
-  }
+    .space, .wrapper, .info {
+        padding: 10px;
+    }
 
-  h1 {
-    font-family: monospace;
-    color: #1618a6;
-    font-size: 200%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
+    /* Ensure .box elements stack vertically */
+    .box {
+        width: 100%; /* Full width */
+        height: auto; /* Adjust height automatically */
+        margin-bottom: 20px; /* Add some space between boxes */
+    }
 
-  h4 {
-    font-family: monospace;
-    color: white;
-    font-size: 150%; /* Adjusted font size */
-  }
+    .founders {
+        padding: 0; /* Remove padding */
+    }
 
-  p {
-    font-family: monospace;
-    padding: 25px; /* Adjusted padding */
-    color: #1618a6;
-    font-size: 200%; /* Adjusted font size */
-  }
+    .founder-photo {
+        width: 150px; /* Adjust photo size */
+    }
 
-  table {
-    float: none;
-    position: relative;
-  }
+    .founder-name, .founder-email {
+        font-size: 1em; /* Adjust font size */
+    }
 
-  /* navigation bar */
-  .menu {
-    z-index: 100;
-    list-style-type: none;
-    padding: 10px;
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-color: white;
-  }
+    .whatsapp-qr {
+        width: 200px; /* Adjust QR size */
+        height: auto; /* Maintain aspect ratio */
+    }
 
-  .menu a {
-    float: right;
-    display: block;
-    color: #1618a6;
-    text-align: center;
-    font-family: monospace;
-    font-size: 1.5em; /* Adjusted font size */
-    padding: 14px 20px; /* Adjusted padding */
-    text-decoration: none;
-    border-radius: 50px;
-  }
-
-  .space {
-    padding: 25px; /* Adjusted padding */
-  }
-
-  /* typing animation */
-  .wrapper {
-    display: grid;
-    place-items: center; 
-  }
-
-  .typing-demo {
-    font-size: 150%; /* Adjust font size for mobile */
-    width: auto; /* Adjust width to fit content */
-    margin: 0 auto; /* Center the typing animation horizontally */
-    padding: 10px 0; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding and border in the element's width */
-    border-right: 3px solid #1618a6; /* Adjust the caret border style */
-    animation: typing 4s steps(26), blink .5s step-end infinite alternate;
-  }
-
-  /* About us section */
-  .about-us {
-      display: none;
-  }
-    
-  .info {
-    padding: 5px;
-  }
-
-  .box {
-    width: 250px; 
-    height: 250px; 
-    padding: 5px; 
-    font-size: 100%; 
-  }
-
-  /* Founders section */
-  .founders-section {
-    padding: 15px; 
-  }
-
-  .founders {
-    flex-direction: column; 
-    padding: 50px; 
-  }
-
-  .founder-photo {
-    width: 100px;
-  }
-
-  /* Whatsapp section */
-  .whatsapp-section {
-    padding: 15px; 
-  }
-
-  .whatsapp-qr {
-    width: 200px;
-    height: 200px;
-  }
-
-  .signature {
-    position: fixed;
-    bottom: -50px; 
-    right: -57px;
-  }
+    .signature {
+        position: relative; /* Adjust position */
+        bottom: auto;
+        right: auto;
+        text-align: center;
+        font-size: 0.8em; /* Adjust font size */
+    }
 }
-
 
