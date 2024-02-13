@@ -280,7 +280,7 @@ td {
         width: auto; 
         margin: 0 auto;
         animation: typing 4s steps(22), blink .5s step-end infinite alternate; 
-        margin-bottom: 100px; 
+        margin-bottom: 10px; 
     }
 
     .info {
