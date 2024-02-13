@@ -253,7 +253,6 @@ td {
     font-size: 1em;
 }
 
-/* Add this at the bottom of your existing CSS */
 
 @media only screen and (max-width: 768px) {
     /* Hide top navigation buttons */
@@ -311,9 +310,9 @@ td {
     }
 
     .signature {
-        position: relative; /* Adjust position */
-        bottom: auto;
-        right: auto;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
         text-align: center;
         font-size: 0.8em; /* Adjust font size */
     }
