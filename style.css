@@ -275,6 +275,14 @@ td {
         padding: 10px;
     }
 
+    .typing-demo {
+        font-size: 2em; /* Adjust the font size to be smaller on mobile */
+        width: auto; /* Let the width be automatic to adjust to the text */
+        padding: 0 10px; /* Add some padding on the sides */
+        margin: 0 auto; /* Center the typing demo in the viewport */
+        animation: typing 4s steps(22), blink .5s step-end infinite alternate; /* Adjust the steps if necessary */
+    }
+
     .info {
         padding: 20px; /* Add padding around the boxes to prevent them from touching the screen edges */
         gap: 10px; /* Reduce the spacing between the boxes */
