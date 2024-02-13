@@ -280,8 +280,13 @@ td {
         font-size: 1.7em; 
         width: auto; 
         margin: 0 auto;
-        animation: typing 4s steps(22), blink .5s step-end infinite alternate; 
-        border-right: 2px solid;
+        animation: typing 4s steps(26), blink .5s step-end infinite alternate; 
+        border-right: 0.1em solid;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 26ch; } /* Make sure this matches the width of the .typing-demo element */
     }
 
     .info {
