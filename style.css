@@ -282,6 +282,7 @@ td {
         margin: 0 auto;
         animation: typing 4s steps(26), blink .5s step-end infinite alternate; 
         border-right: 0.5em solid;
+        line-height: 1;
     }
 
     @keyframes typing {
