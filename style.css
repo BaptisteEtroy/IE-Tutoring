@@ -270,10 +270,6 @@ td {
         margin-bottom: 100px; /* Add more space below the paragraph */
     }
     
-    .typing-demo {
-        font-size: 150%; /* Adjust the font size to fit on the screen */
-        margin-bottom: 100px; /* Add more space below the typing animation */
-    }
 
     .space, .wrapper, .info {
         padding: 10px;
@@ -310,11 +306,11 @@ td {
     }
 
     .signature {
-        position: fixed;
+        position: relative;
         bottom: 0px;
         right: 0px;
         text-align: center;
-        font-size: 0.8em; /* Adjust font size */
+        font-size: 0.7em; /* Adjust font size */
     }
 }
 
