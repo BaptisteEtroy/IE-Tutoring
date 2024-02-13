@@ -266,19 +266,35 @@ td {
         padding: 20px;
     }
 
+    p {
+        font-size: 150%; /* Adjust the font size */
+        margin-bottom: 100px; /* Add more space below the paragraph */
+    }
+    
+    .typing-demo {
+        font-size: 150%; /* Adjust the font size to fit on the screen */
+        margin-bottom: 100px; /* Add more space below the typing animation */
+    }
+
     .space, .wrapper, .info {
         padding: 10px;
     }
 
-    /* Ensure .box elements stack vertically */
+    .info {
+        padding: 20px; /* Add padding around the boxes to prevent them from touching the screen edges */
+        gap: 10px; /* Reduce the spacing between the boxes */
+    }
+
     .box {
         width: 100%; /* Full width */
         height: auto; /* Adjust height automatically */
-        margin-bottom: 20px; /* Add some space between boxes */
+        margin-bottom: 10px; /* Add some space between boxes */
     }
 
     .founders {
-        padding: 0; /* Remove padding */
+        padding: 0;
+        -webkit-column-gap: 50px;
+        column-gap: 50px;
     }
 
     .founder-photo {
