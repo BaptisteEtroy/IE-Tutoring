@@ -137,28 +137,6 @@ table {
   
 }
 
-.headings {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    font-family: monospace;
-    font-size: 2em;
-    padding: 14px 40px;
-    text-decoration: none;
-    border-radius: 50px;
-}
-
-.tables {
-    margin-left:50px;
-    margin-right:100px;
-    width: 100%;
-}
-
-td {
-  height: 300px;
-}
-
 /* Founders section */
 
 .founders-section {
@@ -181,7 +159,7 @@ td {
 
 .founder-photo {
     width: 200px;
-    height: auto;
+    height: 265px;
     border-radius: 15%;
     margin-bottom: 10px;
 }
@@ -266,65 +244,75 @@ td {
     }
 
     p {
-        font-size: 150%; /* Adjust the font size */
-        margin-top: 400px;
-        margin-bottom: 200px; /* Add more space below the paragraph */
+        font-size: 150%;
+        margin-top: 320px;
+        margin-bottom: 200px;
     }
     
 
-    .space, .info {
+    .space {
         padding: 10px;
+    }
+    
+    .wrapper {
+      height: 4vh;
     }
 
     .typing-demo {
-        font-size: 1.7em; 
-        width: auto; 
+        font-size: 1.7em;
+        width: auto;
         margin: 0 auto;
-        animation: typing 4s steps(26), blink .5s step-end infinite alternate; 
-        border-right: 0.2em solid;
+        animation: typing 4s steps(26), blink .5s step-end infinite alternate;
+        border-right: 0.1em solid;
     }
 
     @keyframes typing {
       from { width: 0; }
-      to { width: 26ch; } /* Make sure this matches the width of the .typing-demo element */
+      to { width: 26ch; }
     }
 
     .info {
-        padding: 20px; /* Add padding around the boxes to prevent them from touching the screen edges */
-        gap: 10px; /* Reduce the spacing between the boxes */
+        padding: 20px;
+        gap: 10px;
     }
 
     .box {
-        width: 100%; /* Full width */
-        height: auto; /* Adjust height automatically */
-        margin-bottom: 10px; /* Add some space between boxes */
+        width: 75%;
+        padding-left:60px;
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 0;
+    }
+    
+    .box h3{
+        font-size: 1em;
     }
 
     .founders {
         padding: 0;
-        -webkit-column-gap: 50px;
-        column-gap: 50px;
+        -webkit-column-gap: 30px;
+        column-gap: 30px;
     }
 
     .founder-photo {
-        width: 150px; /* Adjust photo size */
+        width: 150px;
+        height: 200px;
     }
 
     .founder-name, .founder-email {
-        font-size: 1em; /* Adjust font size */
+        font-size: 0.7em;
     }
 
     .whatsapp-qr {
-        width: 200px; /* Adjust QR size */
-        height: auto; /* Maintain aspect ratio */
+        width: 200px;
+        height: auto;
     }
 
     .signature {
         position: relative;
-        bottom: 0px;
-        right: 0px;
+        bottom: 0;
+        right: 0;
         text-align: center;
-        font-size: 0.7em; /* Adjust font size */
+        font-size: 0.7em;
     }
 }
-
