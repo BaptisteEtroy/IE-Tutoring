@@ -216,6 +216,23 @@ table {
     background-color: #128C7E;
 }
 
+.form-join-button {
+    display: inline-block;
+    background-color: #9932CC;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: monospace;
+    transition: background-color 0.3s;
+}
+
+.form-join-button:hover {
+    background-color: #9400D3;
+}
+
+
 .signature {
     position: fixed;
     bottom: -60px;
