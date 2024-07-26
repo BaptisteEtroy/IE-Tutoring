@@ -145,6 +145,14 @@ table {
     color:white;
 }
 
+.tutor {
+    background-color: orange;
+}
+
+.tutor:hover:not(.active) {
+    background-color: peru;
+}
+
 /* Founders section */
 
 .founders-section {
