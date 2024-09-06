@@ -13,7 +13,36 @@
 </head>
 
 <body>
-    <p>This page is not listed on the website and can only be accessed via the direct link.</p>
+    <div class="form-container">
+        <h3>Submit your name</h3>
+        <form id="emailForm">
+            <label for="name">Enter your name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+    
+            <input type="checkbox" id="confirm" name="confirm" required>
+            <label for="confirm">Class confirmation</label><br><br>
+    
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $to = "tutoring.ieu@egmail.com";  // Your email address
+        $subject = "New Submission";
+        $message = "Name: " . $_POST['name'] . "\nConfirmation: Accepted";
+        $headers = "From: no-reply@example.com";
+
+        if (mail($to, $subject, $message, $headers)) {
+            echo "Email sent successfully!";
+        } else {
+            echo "Failed to send email.";
+        }
+    }
+    ?>
+
+    <script src="java.js"></script>
 </body>
 
 </html>
