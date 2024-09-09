@@ -6,41 +6,107 @@
     <meta name="robots" content="noindex, nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <title>IE Tutoring</title>
+    <link rel="icon" type="image/x-icon" href="photos/favicon.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        label {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #1618a6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2f319b;
+        }
+
+        p {
+            color: #666;
+            margin-top: 20px;
+        }
+
+        /* Smooth animations */
+        input, button {
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #2f319b;
+        }
+    </style>
 </head>
 
 <body>
     <div class="form-container">
-        <h3>Submit your name</h3>
-        <form id="emailForm">
-            <label for="name">Enter your name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-    
-            <input type="checkbox" id="confirm" name="confirm" required>
-            <label for="confirm">Class confirmation</label><br><br>
+        <h3>Class confirmation</h3>
+        <!-- Action URL is the Formspree endpoint -->
+        <form id="emailForm" action="https://formspree.io/f/xzzpwqko" method="POST">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="confirm">
+                <input type="checkbox" id="confirm" name="confirm" required> Class confirmation
+            </label><br><br>
     
             <button type="submit">Submit</button>
         </form>
-        <p id="message"></p>
     </div>
-
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $to = "tutoring.ieu@egmail.com";  // Your email address
-        $subject = "New Submission";
-        $message = "Name: " . $_POST['name'] . "\nConfirmation: Accepted";
-        $headers = "From: no-reply@example.com";
-
-        if (mail($to, $subject, $message, $headers)) {
-            echo "Email sent successfully!";
-        } else {
-            echo "Failed to send email.";
-        }
-    }
-    ?>
 
     <script src="java.js"></script>
 </body>
