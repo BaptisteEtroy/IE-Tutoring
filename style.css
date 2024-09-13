@@ -198,14 +198,14 @@ table {
 
 /* Whatsapp section*/
 
-.whatsapp-section {
+.form-section {
     position: relative;
     padding: 30px;
     text-align: center;
     margin-top: 20px;
 }
 
-.whatsapp-section h6 {
+.form-section h6 {
     color: #1618a6;
     font-family: monospace;
     margin-bottom: 10px;
