@@ -17,7 +17,6 @@ h1 {
     font-family: monospace;
     color: #1618a6;
     font-size: 500%
-    
 }
 
 h4 {
@@ -163,38 +162,40 @@ table {
 
 .founders-section {
     padding: 30px;
-    text-align: center;
+    text-align: left;
 }
 
 .founders {
     display: flex;
-    justify-content: center;
-    padding: 100px;
-    -webkit-column-gap: 200px;
+    justify-content: left;
+    -webkit-column-gap: 100px;
 }
 
 .founder {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
 }
 
 .founder-photo {
-    width: 200px;
-    height: 265px;
+    width: 400px;
+    height: 400px;
     border-radius: 15%;
-    margin-bottom: 10px;
 }
 
 .founder-name {
     color: #1618a6;
     font-size: 1.5em;
+    padding-left: 20px;
 }
 
 .founder-email {
     color: #1618a6;
     font-size: 1em;
+    padding-left: 20px; 
+    margin: 0;
 }
+
 
 /* Whatsapp section*/
 
