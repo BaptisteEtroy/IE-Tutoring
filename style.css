@@ -27,9 +27,9 @@ h4 {
 
 p {
     font-family: monospace;
-    padding: 5vw; /* Keep the responsive padding */
-    font-size: 4vw; /* Responsive font size */
-    margin-top: 30vh; /* Increased top margin to push content down */
+    padding: 5vw; 
+    font-size: 4vw; 
+    margin-top: 30vh; 
     margin-bottom: 30vh;
     color: #1618a6;
 }
