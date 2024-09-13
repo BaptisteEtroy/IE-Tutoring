@@ -88,7 +88,6 @@ table {
 }
 
 .typing-demo {
-    font-size: 300%;
     color: #1618a6;
     width: 26ch;
     animation: typing 4s steps(26), blink .5s step-end infinite alternate;
@@ -97,6 +96,17 @@ table {
     border-right: 4px solid;
     font-family: monospace;
     font-size: 4em;
+}
+
+.typing-demo2 {
+    color: #1618a6;
+    width: 41ch;
+    animation: typing 3s steps(41), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid;
+    font-family: monospace;
+    font-size: 3em;
 }
 
 @keyframes typing {
@@ -189,14 +199,14 @@ table {
 
 /* Whatsapp section*/
 
-.whatsapp-section {
+.form-section {
     position: relative;
     padding: 30px;
     text-align: center;
     margin-top: 20px;
 }
 
-.whatsapp-section h6 {
+.form-section h6 {
     color: #1618a6;
     font-family: monospace;
     margin-bottom: 10px;
