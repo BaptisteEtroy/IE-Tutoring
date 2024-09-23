@@ -130,7 +130,7 @@ body {
     gap: 50px;
     padding: 50px;
     justify-content: center;
-    background-color: #dedefe;
+    background-color: #1618a6cf;
     position: relative;
     width: 75%;
     border-radius: 10px;
@@ -139,7 +139,7 @@ body {
     padding: 1vw;
     margin-bottom: 2vw;
     font-family: monospace;
-    color: black;
+    color: white;
     text-align: center;
     width: auto;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
