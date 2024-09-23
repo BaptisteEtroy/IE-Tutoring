@@ -384,6 +384,7 @@ body {
       align-items: center;
       height: auto; /* Let the height adjust naturally */
       padding: 10px 0; 
+      padding-top: 20px;
   }.text {
       width: 100%;
       padding: 0 20px; /* Add some side padding */
@@ -396,10 +397,7 @@ body {
   }.image img {
       width: 80%; 
       padding: 0; 
-  }.slideshow-container {
-    padding-bottom: 0;
-    height: auto;
-}
+  }
 
 }
 
