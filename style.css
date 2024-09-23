@@ -390,7 +390,10 @@ body {
   }.image img {
       width: 80%; 
       padding: 0; 
-  }
+  }.slideshow-container {
+    padding-bottom: 0;
+    height: auto;
+}
 
 }
 
