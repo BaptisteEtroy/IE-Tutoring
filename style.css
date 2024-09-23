@@ -294,9 +294,7 @@ body {
 
 @media only screen and (max-width: 768px) {
     /* Hide top navigation buttons */
-    .menu li {
-        display: none;
-    }
+    
 
     /* Reduce padding and margins to space things out */
     .sp, p {
