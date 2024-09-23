@@ -352,12 +352,15 @@ body {
     }
 
     .founder-photo {
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
     }
 
-    .founder-name, .founder-email {
-        font-size: 0.7em;
+    .founder-name{
+      font-size: 1em;
+    } 
+    .founder-email {
+        font-size: 0.5em;
     }
 
     .signature {
