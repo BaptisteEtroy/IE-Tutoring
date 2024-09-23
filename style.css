@@ -373,29 +373,23 @@ body {
 
     .slide-content {
       display: flex;
-      flex-direction: column; /* Make text go above the image */
+      flex-direction: column; 
       justify-content: center;
       align-items: center;
       height: auto; /* Let the height adjust naturally */
-      padding: 10px; /* Add padding to avoid cramping */
+      padding: 10px 0; 
   }.text {
       width: 100%;
       padding: 0 20px; /* Add some side padding */
       text-align: center; /* Center the text */
-  }
-
-  .text h2 {
-      padding: 0; /* Remove large padding */
-  }
-
-  .image {
+  }.text h2 {
+      padding: 0; 
+  }.image {
       width: 100%;
-      text-align: center; /* Center the image */
-  }
-
-  .image img {
-      width: 80%; /* Resize the image to fit better */
-      padding: 0; /* Remove padding */
+      text-align: center;
+  }.image img {
+      width: 80%; 
+      padding: 0; 
   }
 
 }
