@@ -370,4 +370,33 @@ body {
         text-align: center;
         font-size: 0.7em;
     }
+
+    .slide-content {
+      display: flex;
+      flex-direction: column; /* Make text go above the image */
+      justify-content: center;
+      align-items: center;
+      height: auto; /* Let the height adjust naturally */
+      padding: 10px; /* Add padding to avoid cramping */
+  }.text {
+      width: 100%;
+      padding: 0 20px; /* Add some side padding */
+      text-align: center; /* Center the text */
+  }
+
+  .text h2 {
+      padding: 0; /* Remove large padding */
+  }
+
+  .image {
+      width: 100%;
+      text-align: center; /* Center the image */
+  }
+
+  .image img {
+      width: 80%; /* Resize the image to fit better */
+      padding: 0; /* Remove padding */
+  }
+
 }
+
