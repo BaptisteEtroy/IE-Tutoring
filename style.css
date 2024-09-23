@@ -369,7 +369,11 @@ body {
         font-size: 0.7em;
     }
 
-    .slide-content {
+    .info {
+      width: 65%;
+    }
+
+  .slide-content {
       display: flex;
       flex-direction: column; 
       justify-content: center;
