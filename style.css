@@ -293,8 +293,12 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-    /* Hide top navigation buttons */
-    
+    /*top navigation buttons */
+    .menu a {
+      font-size: 1em;
+      padding: 7px 20px;
+      text-decoration: none;
+    }
 
     /* Reduce padding and margins to space things out */
     .sp, p {
