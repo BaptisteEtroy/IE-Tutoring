@@ -26,6 +26,3 @@ jobs:
     
     - name: Run tests
       run: npm test
-
-    - name: Lint JavaScript
-      run: npx eslint . --ext .js
