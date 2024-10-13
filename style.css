@@ -332,6 +332,9 @@ body {
       to { width: 26ch; }
     }
 
+    .about-intro {
+      padding: 10px;
+    }
     .info {
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Adjust for tighter fit */
     }
