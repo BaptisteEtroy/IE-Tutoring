@@ -1,1 +1,5 @@
 permalink: /:name/
+
+exclude:
+  - CNAME
+
