@@ -34,7 +34,7 @@ This backend is designed using a microservices architecture. Each service is iso
 - **Communication Service:** Contacts student and tutors based on the matchings outcome.
 - **Enrollment Service:** Manages tutor applications.
 
-![Architecture Diagram](documents/assets/diagram.png)
+![Architecture Diagram](public/photos/diagram.png)
 
 ## Getting Started
 
