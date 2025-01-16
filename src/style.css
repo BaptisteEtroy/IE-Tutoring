@@ -293,6 +293,16 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+
+    /* hiding the services page on phone screens */
+    body.services-page {
+      display: none;
+    }
+
+    .services-link {
+      display: none;
+    }
+
     /*top navigation buttons */
     .menu a {
       font-size: 1em;
