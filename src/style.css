@@ -368,6 +368,19 @@ body {
         font-size: 0.5em;
     }
 
+ /* Form section in index */
+    .form-section h1 {
+      font-size: 2em;
+    }.form-section h6 {
+        font-size: 0.9em;
+    }.form-join-button {
+        padding: 15px 25px;
+        font-size: 1.5em;
+    }.whatsapp-join-button {
+        padding: 7px 15px;
+        font-size: 1.2em;
+    }
+
     .signature {
         position: relative;
         bottom: 0;
@@ -382,7 +395,11 @@ body {
 
     .slideshow-container {
       width: 69%;
-      height: 300px;
+      height: 150px;
+    }.slide-content .icon {
+      font-size: 2em; /* Large icon */
+    }.slide-content .text h2 {
+      font-size: 1.5em; /* Increased text size */
     }
 
 }
