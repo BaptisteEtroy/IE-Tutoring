@@ -33,12 +33,6 @@ jobs:
         source: ./src
         destination: _site/
 
-    - name: Ensure _site exists
-      run: mkdir -p _site/public/photos
-
-    - name: Copy static files
-      run: cp -r public/photos _site/public/photos
-
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
 
