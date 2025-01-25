@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unsubscribe - IE Tutoring</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .unsubscribe-container {
+      margin: 50px auto;
+      padding: 20px;
+      max-width: 400px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333;
+    }
+    input[type="email"] {
+      width: calc(100% - 24px);
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="unsubscribe-container">
+    <h1>Unsubscribe</h1>
+    <p>Enter your email address to unsubscribe from our mailing list.</p>
+    <input type="email" id="emailInput" placeholder="Your email address" required>
+    <button onclick="sendUnsubscribeEmail()">Unsubscribe</button>
+    <p>Your email client will open for confirmation.</p>
+  </div>
+
+  <script>
+    function sendUnsubscribeEmail() {
+      const email = document.getElementById('emailInput').value.trim();
+      if (!email) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+      // Create the mailto link
+      const mailtoLink = `mailto:info@ietutoring.com?subject=Unsubscribe&body=Please unsubscribe me from your mailing list. Email: ${email}`;
+      // Open the mailto link
+      window.location.href = mailtoLink;
+    }
+  </script>
+</body>
+</html>
