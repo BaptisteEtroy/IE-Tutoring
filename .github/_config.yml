@@ -3,3 +3,7 @@ permalink: /:name/
 exclude:
   - CNAME
 
+include:
+  - public/photos
+
+
